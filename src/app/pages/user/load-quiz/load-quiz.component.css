@@ -1,0 +1,13 @@
+.truncate{
+    display: block;
+    /* text-align: center; */
+    /* white-space: nowrap; */
+    width: 100%;
+    overflow: hidden;
+    max-width: 290px;
+}
+
+.example-header-image{
+    background-size: cover;
+    background-image: url(../../../../assets/exam.png);
+}

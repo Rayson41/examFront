@@ -1,0 +1,56 @@
+<mat-card *ngIf="user">
+    <h1>Your Profile Details</h1>
+
+    <!-- {{user | json}} -->
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="container text-center">
+
+                <div class="container">
+                    <img class="profile-image" src="data:image/jpeg;base64,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" alt="">
+                </div>
+
+                <h1 class="mt20">{{user.firstname}} {{user.lastname}}</h1>
+
+                <div class="row">
+
+                    <div class="col-md-10 offset-md-1">
+
+                        <!-- table Details -->
+                        <table class="table">
+                            <tr>
+                                <td>Username</td>
+                                <td>{{user.username}}</td>
+                            </tr>
+
+                            <tr>
+                                <td>UserId</td>
+                                <td>EXAM{{user.id}}</td>
+                            </tr>
+
+                            <tr>
+                                <td>Phone</td>
+                                <td>{{user.phone}}</td>
+                            </tr>
+
+                            <tr>
+                                <td>Role</td>
+                                <td>{{user.authorities[0].authority}}</td>
+                            </tr>
+
+                            <tr>
+                                <td>Status</td>
+                                <td>{{user.enabled ? "ACTIVE" : "NOTACTIVE"}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+
+    <mat-card-actions class="text-center">
+        <button mat-raised-button color="primary">Upadte</button>
+        <button mat-raised-button color="accent">Share</button>
+    </mat-card-actions>
+</mat-card>

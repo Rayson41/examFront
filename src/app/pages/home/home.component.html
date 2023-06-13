@@ -1,0 +1,20 @@
+<div class="bootstrap-wrapper">
+    <div class="container" *ngIf="!isLoggedIn">
+        <div class="row mt20">
+            <div class="col-md-6 offset-md-3 text-center">
+                <h1>Welcome to Exam Portal</h1>
+
+                <button [routerLink]="'/login'" class="mr20" mat-raised-button color="primary">Login Page</button>
+                <button [routerLink]="'/signup'" mat-raised-button color="accent">Register Page</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="isLoggedIn">
+        <div class="row mt20">
+            <div class="col-md-6 offset-md-3 text-center">
+                <h1>Welcome to Exam Portal</h1>
+                <button [routerLink]="'/user-dashboard/0'" class="mr20" mat-raised-button color="primary">Home Page</button>
+            </div>
+        </div>
+    </div>
+</div>

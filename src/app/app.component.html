@@ -1,0 +1,21 @@
+<ngx-ui-loader
+fgsType="rectangle-bounce"
+text="Please Wait"
+textColor="#00ACC1"
+[fgsSize]="45"
+></ngx-ui-loader>
+
+<!-- 
+fgsColor="#d3c848"
+pbColor="#d3c848"
+ -->
+
+<div ngxUiLoaderBlurred [blur]="5">
+    <!-- This page content will be blurred/frosted when foreground loader is showed -->
+    
+    <!-- static content -->
+    <app-navbar></app-navbar>
+
+    <!-- dynamic content -->
+    <router-outlet></router-outlet>
+  </div>
