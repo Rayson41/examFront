@@ -1,2 +1,2 @@
-let baseUrl = "http://localhost:8080"
+let baseUrl = "https://raysonbackend.up.railway.app/"
 export default baseUrl;
